@@ -1,47 +1,28 @@
 {
   "name": "tesla-cybertruck-concept",
-  "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@react-three/drei": "^7.19.2",
-    "@react-three/fiber": "^7.0.17",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "react": "^17.0.2",
-    "react-colorful": "^5.5.0",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "typescript": "^4.1.2",
-    "valtio": "^1.2.5",
-    "web-vitals": "^1.0.1"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "@react-three/drei": "^7.19.6",
+    "@react-three/fiber": "^7.0.17",
+    "@types/three": "^0.133.1",
+    "next": "12.0.2",
+    "react": "17.0.2",
+    "react-colorful": "^5.5.0",
+    "react-dom": "17.0.2",
+    "three": "^0.134.0",
+    "valtio": "^1.2.5"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@types/node": "16.11.6",
+    "@types/react": "17.0.33",
+    "eslint": "7",
+    "eslint-config-next": "12.0.2",
+    "typescript": "4.4.4"
   }
 }
