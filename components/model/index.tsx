@@ -6,7 +6,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { GLTF, GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
-const MODEL_PATH = '/cybertruck.gltf' 
+const MODEL_PATH = '/cybertruck.gltf'
 
 useGLTF.preload(MODEL_PATH)
 
@@ -24,16 +24,20 @@ export default function Model(props: any) {
                 castShadow
                 receiveShadow
                 geometry={nodes.window_frame.geometry}
-                material={materials.Black_glass}
+                // material={materials.Black_glass}
                 rotation={[-1.6, 0.01, 0.01]}
-            />
+            >
+                <meshPhongMaterial color='#ffffff' />
+            </mesh>
             <mesh
                 castShadow
                 receiveShadow
                 geometry={nodes.tail_lights.geometry}
-                material={materials.Orange}
+                material={materials.tail_lights}
                 rotation={[-1.6, 0.01, 0.01]}
-            />
+            >
+                <meshPhongMaterial color='yellow' />
+            </mesh>
             <mesh
                 castShadow
                 receiveShadow
