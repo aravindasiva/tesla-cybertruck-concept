@@ -13,7 +13,7 @@ const Home = () => {
         </Stage>
         <BakeShadows />
       </Suspense>
-      <OrbitControls autoRotate />
+      <OrbitControls autoRotate={false} />
     </Canvas>
   )
 }
