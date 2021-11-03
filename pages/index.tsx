@@ -6,7 +6,7 @@ import { Box } from '@chakra-ui/react'
 
 const Home = () => {
   return (
-    <Box zIndex={1} w="full" h="100vh" bg="gray.background" p={[2, 4, 8]}>
+    <Box zIndex={1} w="full" h="100vh">
     <Canvas shadows dpr={[1, 2]} camera={{ fov: 45, zoom: 0.5 }} style={{ position: 'absolute', left: 0, top: 0, bottom: 0 }}>
       <Suspense fallback={null}>
         <Model position={[0, -0.7, 0]} />
