@@ -6,7 +6,17 @@ import React, { useLayoutEffect, useRef } from 'react'
 import { Reflector, useGLTF, useTexture } from '@react-three/drei'
 import { GLTF, GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import * as THREE from 'three'
-import { Stage } from '../Stage'
+import { Stage } from './components/Stage'
+import Body from './components/Body'
+import Glass from './components/Glass'
+import Indicators from './components/Indicators'
+import MainLights from './components/MainLights'
+import TailLights from './components/TailLights'
+import Rims from './components/Rims'
+import SolarPanel1 from './components/SolarPanel1'
+import SolarPanel2 from './components/SolarPanel2'
+import Wheels from './components/Wheels'
+import WindowFrame from './components/WindowFrame'
 
 
 const MODEL_PATH = '/cybertruck.gltf'
@@ -28,86 +38,16 @@ export default function Model(props: any) {
     <>
       <Stage />
       <group ref={group} {...props} dispose={null}>
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.body.geometry}
-        material={materials.Silver}
-        position={[0, -0.02, 0]}
-        rotation={[-1.57, 0, -0.81]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.glass.geometry}
-        material={materials.Glass}
-        position={[0, -0.02, 0]}
-        rotation={[-1.57, 0, -0.81]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.indicators.geometry}
-        material={materials.Light_orange}
-        position={[0, -0.02, 0]}
-        rotation={[-1.57, 0, -0.81]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.main_lights.geometry}
-        material={materials.Light_white}
-        position={[0, -0.02, 0]}
-        rotation={[-1.57, 0, -0.81]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.rims.geometry}
-        material={materials.Gray}
-        position={[0, -0.02, 0]}
-        rotation={[-1.57, 0, -0.81]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.solar_panel_1.geometry}
-        material={materials.SB_black}
-        position={[0, -0.02, 0]}
-        rotation={[-1.57, 0, -0.81]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.solar_panel_2.geometry}
-        material={materials.SB_gray}
-        position={[0, -0.02, 0]}
-        rotation={[-1.57, 0, -0.81]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.tail_lights.geometry}
-        material={materials.Orange}
-        position={[0, -0.02, 0]}
-        rotation={[-1.57, 0, -0.81]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.wheels.geometry}
-        material={materials.Black}
-        position={[0, -0.02, 0]}
-        rotation={[-1.57, 0, -0.81]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.window_frame.geometry}
-        material={materials.Black_glass}
-        position={[0, -0.02, 0]}
-        rotation={[-1.57, 0, -0.81]}
-      />
+        <Body geometry={nodes.body.geometry} material={materials.Silver}/>
+        <Glass geometry={nodes.glass.geometry} material={materials.Glass} />
+        <Indicators geometry={nodes.indicators.geometry} material={materials.Light_orange} />
+        <MainLights geometry={nodes.main_lights.geometry} material={materials.Light_white} />
+        <TailLights geometry={nodes.tail_lights.geometry} material={materials.Orange} />
+        <Rims geometry={nodes.rims.geometry} material={materials.Gray} />
+        <SolarPanel1 geometry={nodes.solar_panel_1.geometry} material={materials.SB_black} />
+        <SolarPanel2 geometry={nodes.solar_panel_2.geometry} material={materials.SB_gray} />
+        <Wheels geometry={nodes.wheels.geometry} material={materials.Black} />
+        <WindowFrame geometry={nodes.window_frame.geometry} material={materials.Black_glass} />
     </group>
     </>
   )
