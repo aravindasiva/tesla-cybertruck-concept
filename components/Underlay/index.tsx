@@ -4,7 +4,9 @@ import CyberTruckLogo from '../svg/CyberTruckLogo'
 
 const Underlay = () => {
   return (
-        <CyberTruckLogo width='700px' height='700px' color='#000'/>
+    <Center>
+      <CyberTruckLogo/>
+    </Center>
   )
 }
 export default Underlay
