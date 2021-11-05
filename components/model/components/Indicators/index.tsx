@@ -3,6 +3,7 @@ import React from 'react'
 export default function Indicators({geometry, material}) {
     return (
         <mesh
+        visible={true}
         castShadow
         receiveShadow
         geometry={geometry}
