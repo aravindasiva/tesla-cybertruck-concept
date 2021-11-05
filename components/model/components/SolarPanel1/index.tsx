@@ -9,11 +9,10 @@ export default function SolarPanel1({ geometry, color }) {
       position={[0, -0.02, 0]}
       rotation={[-1.57, 0, -0.81]}
     >
-      <meshPhongMaterial
+      <meshPhysicalMaterial
         name='solar1'
         color={color}
-        flatShading={true}
-        reflectivity={0}
+        roughness={0.3}
       />
     </mesh>
   )

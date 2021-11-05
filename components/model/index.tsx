@@ -117,7 +117,7 @@ export default function Model(props: any) {
           dispose={null}
           onPointerOver={(e: any) => {e.stopPropagation(), set(e.object.material.name)}}
 
-          onPointerOut={(e: any) => {e.stopPropogation(), set(null)}}
+          onPointerOut={(e: any) => {e.stopPropagation(), set(null)}}
           onPointerMissed={() => (state.current = null)}
           onClick={(e: any) => {e.stopPropagation(), (state.current = e.object.material.name),console.log("🚀 ~ file: index.tsx ~ line 106 ~ Model ~ state.current", state.current),console.log("🚀 ~ file: index.tsx ~ line 106 ~ Model ~ e.object", e.object)}}
         >
