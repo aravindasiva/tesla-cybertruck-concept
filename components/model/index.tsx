@@ -21,6 +21,7 @@ import { useFrame, useLoader } from '@react-three/fiber'
 import { SVGLoader } from 'three/examples/jsm/loaders/SVGLoader'
 import { HexColorPicker } from "react-colorful"
 import { proxy, useSnapshot } from "valtio"
+import Particles from './components/Particles'
 
 
 
@@ -57,6 +58,7 @@ const state = proxy({
 
 export default function Model(props: any) {
   const group = useRef()
+  const mouse = useRef([0, 0])
   const snap = useSnapshot(state)
   const { scene, nodes, materials } = useGLTF(MODEL_PATH) as unknown as GLTFResult
 
@@ -131,6 +133,7 @@ export default function Model(props: any) {
           <SolarPanel2 geometry={nodes.solar_panel_2.geometry} color={snap.items.solarPanel2} />
           <Wheels geometry={nodes.wheels.geometry} material={materials.Black} />
           <WindowFrame geometry={nodes.window_frame.geometry} material={materials.Black_glass} />
+          <Particles count={300} mouse={mouse} />
         </group>
       </Stage>
     </>
@@ -147,7 +150,7 @@ export function Picker() {
         style={{
           position: 'absolute',
           top: '74px',
-          left: '70px',
+          left: '270px',
           width: '90px',
           height: '90px',
         }}
