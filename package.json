@@ -16,6 +16,7 @@
     "@react-three/fiber": "^7.0.17",
     "@types/three": "^0.133.1",
     "next": "12.0.2",
+    "next-transpile-modules": "^9.0.0",
     "react": "17.0.2",
     "react-colorful": "^5.5.0",
     "react-dom": "17.0.2",
