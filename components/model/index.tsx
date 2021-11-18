@@ -133,7 +133,7 @@ export default function Model(props: any) {
           <SolarPanel2 geometry={nodes.solar_panel_2.geometry} color={snap.items.solarPanel2} />
           <Wheels geometry={nodes.wheels.geometry} material={materials.Black} />
           <WindowFrame geometry={nodes.window_frame.geometry} material={materials.Black_glass} />
-          <Particles count={300} mouse={mouse} />
+          <Particles count={700} mouse={mouse} />
         </group>
       </Stage>
     </>

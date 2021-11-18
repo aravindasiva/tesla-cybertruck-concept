@@ -6,7 +6,8 @@ import {
   Flex,
   Text,
   Button,
-  useDisclosure
+  useDisclosure,
+  Link
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import TeslaWord from "../svg/TeslaWord";
@@ -43,15 +44,17 @@ const HeaderComponent = (props) => {
         display={{ base: isOpen ? "block" : "none", md: "block" }}
         mt={{ base: 4, md: 0 }}
       >
-        <Button
-          variant="solid"
-          bg='black'
-          color='#E7E7EA'
-          _hover={{ bg: "#E7E7EA", color: "black", outlineColor: "black" }}
-          _focus={{ outline: 'none' }}
-        >
-          Order now
-        </Button>
+        <Link href="https://www.tesla.com/cybertruck" isExternal>
+          <Button
+            variant="solid"
+            bg='black'
+            color='#E7E7EA'
+            _hover={{ bg: "#E7E7EA", color: "black", outlineColor: "black" }}
+            _focus={{ outline: 'none' }}
+          >
+            Order now
+          </Button>
+        </Link>
       </Box>
     </Flex>
   );
