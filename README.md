@@ -1,12 +1,12 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
- <h2 align="center">Customize your CyberTruck Concept</h2>
+ <h2 align="center"> 🎨 Customize your CyberTruck Concept</h2>
   <a href="https://github.com/aravindasiva/next-smooth-scroll-template">
-    <img src="diy-cybertruck.gif" alt="diy cybertruck" width="270" height="270">
+    <img src="diy-cybertruck.gif" alt="diy cybertruck" width="300" height="270">
   </a>
 
-  <h3 align="center">Next-Smooth-Scroll </h3>
+  <h3 align="center">Cybertruck concept</h3>
 
   <p align="center">
     What would happen if Tesla let us choose the colors !
@@ -35,7 +35,7 @@
     <br />
     <a href="https://next-smooth-scroll-template.vercel.app/">View Demo</a>
 
-  <h3 align="center">Next-Smooth-Scroll </h3>
+  <h3 align="center">Leave a star ⭐ if you like this concept</h3>
 </div>
 
 <br/>
@@ -68,6 +68,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Contributors names and contact info
 
-Author: Aravinda Siva <br/>
-[LinkedIn](https://www.linkedin.com/in/aravindasiva/)
+### Author: Aravinda Siva <br/>
+[LinkedIn](https://www.linkedin.com/in/aravindasiva/)<br/>
 [Github](https://github.com/aravindasiva/)
