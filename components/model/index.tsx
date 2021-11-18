@@ -106,7 +106,7 @@ export default function Model(props: any) {
     </defs>
     </svg>`
     document.body.style.cursor = `url('data:image/svg+xml;base64,${btoa(hovered ? cursor : auto)}'), auto`
-  }, [hovered])
+  }, [hovered, snap.items, snap.logoColor])
 
 
   return (
