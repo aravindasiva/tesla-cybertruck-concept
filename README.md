@@ -13,7 +13,7 @@
     <br />
     <br />
     <br />
-    <a href="https://next-smooth-scroll-template.vercel.app/">View Demo</a>
+    <a href="https://cybertruck-concept.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/aravindasiva/tesla-cybertruck-concept/issues">Report Bug</a>
     ·
@@ -33,7 +33,7 @@
     <br />
     <br />
     <br />
-    <a href="https://next-smooth-scroll-template.vercel.app/">View Demo</a>
+    <a href="https://cybertruck-concept.netlify.app/">View Demo</a>
 
   <h3 align="center">Leave a star ⭐ if you like this concept</h3>
 </div>
